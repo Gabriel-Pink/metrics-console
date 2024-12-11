@@ -8,8 +8,6 @@ export async function middleware(req: NextRequest) {
   const url = req.nextUrl.clone();
   const { pathname } = url;
 
-  console.log(process.env.JWT_SECRET!)
-
   try {
     if (token) {
       
